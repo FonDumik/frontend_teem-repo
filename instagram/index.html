@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram-copy</title>
-  <link rel="stylesheet" href="./css/style.css"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/scripts.js"></script> 
 </head>
-<body>
+<body id="body">
   <header class="header">
     <div class="container">
       <div class="header_wrapper">
@@ -37,7 +38,7 @@
             <div class="information_follow">
               <span class="name">name</span>
               <button class="follow">Follow</button>
-              <a href="#" class="more_arrow"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="#" class="more_arrow" onclick="openView()"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.89711 5L0 0.5L7.79423 0.500001L3.89711 5Z" fill="white"/>
                 </svg>
                 </a>
@@ -69,15 +70,21 @@
       <div class="container">
         <div class="stories_wrapper">
           <div class="stories_item">
-            <div class="storie_preview"></div>
+            <div class="storie_preview">
+              <img src="./images/test_bg.png" alt="" class="story_img">
+            </div>
             <p class="storie_kind">Name</p>
           </div>
           <div class="stories_item">
-            <div class="storie_preview"></div>
+            <div class="storie_preview">
+              <img src="./images/test_bg.png" alt="" class="story_img">
+            </div>
             <p class="storie_kind">Name</p>
           </div>
           <div class="stories_item">
-            <div class="storie_preview"></div>
+            <div class="storie_preview">
+              <img src="./images/test_bg.png" alt="" class="story_img">
+            </div>
             <p class="storie_kind">Name</p>
           </div>
         </div>
@@ -90,24 +97,47 @@
           <button class="gallery_view">Tagged</button>
         </div>
         <div class="gallery_photos">
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
-          <div class="gallery_item"></div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img">
+          </div>
+          <div class="gallery_item" onclick="openView()">
+            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img">
+          </div>
+        </div>
+      </div>
+      <div class="modal_container" id="modal_container" onclick="closeModal()">
+        <div class="modal_view" id="modal_view">
+          <h1>Данный раздел находится в разработке ☺</h1>
         </div>
       </div>
     </section>
