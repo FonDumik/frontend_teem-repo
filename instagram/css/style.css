@@ -202,14 +202,13 @@ body {
 	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 
-.follow:active,
-.more_arrow:active {
+.follow:active {
 	transform: scale(0.8);
 	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 
 .more_arrow {
-	background-color: #4094EF;
+	background: #4094EF;
 	width: 33px;
 	height: 28px;
 	text-align: center;
@@ -217,6 +216,12 @@ body {
 	border-radius: 3px;
 	transition: 0.6s;
 	box-sizing: border-box;
+	appearance: none;
+	background-image: url(../images/more_icon.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	outline: none;
+	position: relative;
 }
 
 .another_dots a {
@@ -434,13 +439,13 @@ body {
 
 .modal_view {
 	display: block;
-	max-width: 500px;
+	max-width: 700px;
 	text-align: center;
 	padding: 50px 20px;
 }
 
-.modal_view h1 {
-	margin: 0;
+.view_modal_img {
+	transform: scale(1);
 }
 
 /*modal-view-end*/
@@ -515,63 +520,3 @@ body {
 }
 
 /*adaptive-end*/
-
-.minimized {
-	width: 300px;
-	cursor: pointer;
-	border: 1px solid #FFF;
-  }
-  .minimized:hover {
-	border: 1px solid yellow;
-  }
-  /* увеличенная картинка */
-  #magnify {
-	display: none;
-	/* position: absolute; upd: 24.10.2016 */
-	position: fixed;
-	max-width: 600px;
-	height: auto;
-	z-index: 9999;
-  }
-  #magnify img {
-	width: 100%;
-  }
-  /* затемняющий фон */
-  #overlay {
-	display: none;
-	background: #000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0.5;
-	z-index: 9990;
-  }
-  /* кнопка закрытия */
-  #close-popup {
-	width: 30px;
-	height: 30px;
-	background: #FFFFFF;
-	border: 1px solid #AFAFAF;
-	border-radius: 15px;
-	cursor: pointer;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-  }
-  #close-popup i {
-	width: 30px;
-	height: 30px;
-	background: url(https://codernote.ru/files/cross.png) no-repeat center center;
-	background-size: 16px 16px;
-	display: block;
-  }
-  @keyframes rota {
-   25% { transform: rotate(360deg); }
-  }
-  #close-popup:hover {
-	animation: rota 4s infinite normal;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-  }

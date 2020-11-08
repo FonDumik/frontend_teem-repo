@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram-copy</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <script src="./js/scripts.js" defer></script> 
 </head>
 <body id="body">
@@ -38,11 +39,14 @@
           <div class="user_profile_information">
             <div class="information_follow">
               <span class="name">name</span>
-              <button class="follow">Follow</button>
-              <a href="#" class="more_arrow" onclick="openView()"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.89711 5L0 0.5L7.79423 0.500001L3.89711 5Z" fill="white"/>
-                </svg>
-                </a>
+              <button class="follow" id="follow"><span>Follow</span></button>
+              <select href="#" class="more_arrow">
+                <option value=""></option>
+                <option value="Lorem">Lorem ipsum dolor sit amet.</option>
+                <option value="ipsum">Lorem ipsum dolor sit amet.</option>
+                <option value="dolor">Lorem ipsum dolor sit amet.</option>
+                <option value="sit">Lorem ipsum dolor sit amet.</option>
+              </select>
               <div class="another_dots"><a href="#"><svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2" cy="2" r="2" fill="#262626"/>
                 <circle cx="10" cy="2" r="2" fill="#262626"/>
@@ -98,50 +102,50 @@
           <button class="gallery_view">Tagged</button>
         </div>
         <div class="gallery_photos">
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img">
           </div>
-          <div class="gallery_item image__wrapper" onclick="openView()">
-            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img minimized">
+          <div class="gallery_item image__wrapper">
+            <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_img">
           </div>
         </div>
       </div>
-      <div class="modal_container" id="modal_container" onclick="closeModal()">
+      <div class="modal_container" id="modal_container">
         <div class="modal_view" id="modal_view">
-          <img src="" alt="photo" class="gallery_img" id="gallery_item_view">
+          <img src="" alt="photo" class="gallery_img view_modal_img" id="gallery_item_view">
         </div>
       </div>
     </section>
