@@ -152,7 +152,9 @@ body {
 .user_profile_photo {
 	width: 152px;
 	height: 152px;
-	background: url(../images/test_bg.png) center;
+	background: url(../images/ava.jpg) center;
+	background-size: 151%;
+	background-repeat: no-repeat;
 	border-radius: 50%;
 }
 
