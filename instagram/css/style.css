@@ -69,7 +69,7 @@ body {
 	box-sizing: border-box;
 }
 
-.msg_counter::before {
+.msg_counter::after {
 	content: "5";
 	text-align: center;
 	display: block;
@@ -293,7 +293,7 @@ body {
 }
 
 .gallery_view {
-	color: #000;
+	color: #555;
 	font-style: normal;
 	font-weight: 700;
 	letter-spacing: 0.09em;
@@ -306,7 +306,7 @@ body {
 	cursor: pointer;
 	height: 47px;
 	margin: 0 61px 0 0;
-	padding: 0 0 0 18px;
+	padding: 0 0 0 0;
 	position: relative;
 	box-sizing: border-box;
 }
@@ -320,8 +320,14 @@ body {
 	border-top: 1px solid black;
 	height: 48px;
 	margin-top: -1px;
+	color: #000;
 }
 
+.fa-icon {
+	margin-right: 10px;
+}
+
+/* 
 .gallery_view:nth-child(1)::before {
 	content: '';
 	display: block;
@@ -343,7 +349,7 @@ body {
 	position: absolute;
 	top: 17px;
 	left: 0;
-}
+} */
 
 .gallery_photos {
 	display: grid;
@@ -360,7 +366,7 @@ body {
 	overflow: hidden;
 	box-sizing: border-box;
 	transition: 0.5s;
-	cursor: zoom-in;
+	cursor: pointer;
 }
 
 .gallery_img {

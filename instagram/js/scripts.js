@@ -1,6 +1,7 @@
 $(document).ready(function() {
   let container = document.getElementById('modal_container');
   let body = document.getElementById('body');
+  let viewBtn = $('.gallery_view');
 
   $('.gallery_img').click(function() {
     let imgAddr = $(this).attr("src");
@@ -20,4 +21,8 @@ $(document).ready(function() {
       });
   });
 
+  viewBtn.click(function() {
+    $(this).toggleClass('active_view');
+  });
+ 
 });
