@@ -3,7 +3,7 @@ $(document).ready(function() {
   let body = document.getElementById('body');
   let viewBtn = $('.gallery_view');
 
-  $('.gallery_img').click(function() {
+  $('.gallery_item ').click(function() {
     let imgAddr = $(this).attr("src");
     $('#gallery_item_view').attr({src: imgAddr});
     container.style = 'display: flex';
@@ -22,7 +22,32 @@ $(document).ready(function() {
   });
 
   viewBtn.click(function() {
+    $('.gallery_view').removeClass('active_view');
     $(this).toggleClass('active_view');
+
   });
- 
+
+  
+  let msgCounter = +$('.msg_counter').attr('data-counter');
+
+  if ($('.msg_counter').attr('data-counter') == '0') {
+    $('.msg_counter::after').css('display', 'none');
+  } else {
+    $('.msg_counter::after').css('display', 'block');
+  }
+
+  setInterval(() => {
+    msgCounter +=1;
+    $('.msg_counter').attr('data-counter', msgCounter);
+
+    if (msgCounter == 99) {
+      msgCounter = 0;
+    }
+  }, 8000);
+
+  $('.msg_counter').click(function(){
+    $('.msg_counter').attr('data-counter', '0');
+    msgCounter = 0;
+  });
+
 });
